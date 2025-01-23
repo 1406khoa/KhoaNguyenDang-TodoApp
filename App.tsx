@@ -11,14 +11,14 @@ export default function App() {
 
   const addTodo = (task: string) => {
     if (task.trim().length === 0) return;
-    setTodos((prevTodos)=>[...prevTodos, {id: prevTodos.length +1, title: task}])
+    setTodos((prevTodos) => [...prevTodos, { id: prevTodos.length + 1, title: task }])
   }
 
 
   return (
     <View style={styles.container}>
-      <InputTodo onAddToDo = {addTodo} />
-      <ListTodo todos = {todos} />
+      <InputTodo onAddToDo={addTodo} />
+      <ListTodo todos={todos} />
     </View>
   );
 }
