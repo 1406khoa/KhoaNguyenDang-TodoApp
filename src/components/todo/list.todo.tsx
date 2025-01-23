@@ -36,9 +36,17 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         width: '100%',
         textAlign: 'center',
-        padding: 10,
-        borderRadius: 5,
-        backgroundColor: 'yellow',
+        padding: 15,
+        borderRadius: 10,
+        backgroundColor: '#f0e68c', // Changed to a softer color
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.2,
+        shadowRadius: 2,
+        elevation: 3, // For Android shadow
     },
 
     listContainer: {
